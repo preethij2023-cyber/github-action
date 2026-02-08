@@ -13,4 +13,9 @@ jobs:
 
       - name: Run Java
         run: java Hello
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: java-output
+          path: Hello.class
 
